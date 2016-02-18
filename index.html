@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Captain Quack the Mighty Inc.</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- EPIC NAV -->
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-wrapper"> <!-- Nav wrapper for larger screens -->
+        <div class="container-fluid">
+          <!-- Collapsed nav -->
+          <div class="navbar-header">
+            <button id="menu-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <img src="menu-up.png" alt="Menu Icon">
+            </button>
+            <a class="pull-left quack-logo-link" href="#">
+              <img src="quack.png" id="quack-logo" class="img-responsive" alt="Quack Logo" >
+            </a>
+          </div>
+          <!-- Basic nav -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <!-- Dropdown item -->
+              <li class="dropdown">
+                <a class="dropdown-toggle navbar-dropdown-toggle navbar-menu-item" data-toggle="dropdown" href="#"><div class="pull-right chevron-down"><span class="glyphicon glyphicon-chevron-down"></span></div>АВТОМОБИЛИ</a>
+                <ul class="dropdown-menu navbar-dropdown-list">
+                  <li class="navbar-dropdown-list-item"><a href="#"><div class="pull-right visible-xs"><span class="glyphicon glyphicon-chevron-right"></span></div>Подбор авто</a></li>
+                  <li class="navbar-dropdown-list-item"><a href="#"><div class="pull-right visible-xs"><span class="glyphicon glyphicon-chevron-right"></span></div>Автомобили с пробегом</a></li>
+                  <li class="navbar-dropdown-list-item"><a href="#"><div class="pull-right visible-xs"><span class="glyphicon glyphicon-chevron-right"></span></div>Карта цен</a></li>
+                </ul>
+              </li>
+              <!-- Basic items -->
+              <li class="navbar-menu-item"><a href="#"><div class="pull-right visible-xs"><span class="glyphicon glyphicon-chevron-right"></span></div>АКЦИИ</a></li>
+              <li class="navbar-menu-item"><a href="#"><div class="pull-right visible-xs"><span class="glyphicon glyphicon-chevron-right"></span></div>УСЛУГИ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- EPIC NAV -->
+
+    <main>
+      <div class="container-fluid">
+
+        <!-- SELECT BRAND -->
+        <div class="row">
+           <div class="dropdown brand-select col-lg-4 col-lg-offset-3">
+            <p>Выберите бренд</p>
+            <button class="btn btn-default dropdown-toggle brand-select-button" type="button" data-toggle="dropdown"><div class="caret pull-right"></div>Burton 
+            </button>
+            <ul class="dropdown-menu brand-select-select">
+              <li><a href="#">Apo</a></li>
+              <li><a href="#">Arbor</a></li>
+              <li><a href="#">Burton</a></li>
+              <li><a href="#">Capita</a></li>
+              <li><a href="#">DC</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">GNU</a></li>
+              <li><a href="#">Joint</a></li>
+              <li><a href="#">Jones</a></li>
+              <li><a href="#">Lib</a></li>
+              <li><a href="#">Lobster</a></li>
+              <li><a href="#">Never summer</a></li>
+              <li><a href="#">Slash</a></li>
+              <li><a href="#">Yes</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- SELECT BRAND -->
+
+        <!-- CAROUSEL visible-lg only-->
+        <div id="myCarousel" class="carousel slide visible-lg" data-ride="carousel" data-interval="false">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide -->
+            <div class="item active carousel-inner-item">
+              <img id="slide-0" class="carousel-inner-image" src="boarder.png" alt="Boarder">
+              <div class="carousel-caption">
+                <p>BURTON ЗИМА 2014</p>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="item carousel-inner-item">
+              <img id="slide-1" class="carousel-inner-image" src="http://lorempixel.com/1140/560/nature/2/" alt="Spring">
+              <div class="carousel-caption">
+                <p>ВЕСНА 2014</p>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="item carousel-inner-item">
+              <img id="slide-2" class="carousel-inner-image" src="http://lorempixel.com/1140/560/nature/3/" alt="Summer">
+              <div class="carousel-caption">
+                <p>ЛЕТО 2014</p>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="item carousel-inner-item">
+              <img id="slide-3" class="carousel-inner-image" src="http://lorempixel.com/1140/560/nature/4/" alt="Autumn">
+              <div class="carousel-caption">
+                <p>ОСЕНЬ 2015</p>
+              </div>
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- CAROUSEL -->
+
+        <!-- ITEMS HEADING visible-lg & visible-md-->
+        <div class="row visible-lg visible-md">
+          <div class="items-heading col-lg-8 col-lg-offset-2">
+            <h3>АВТОМОБИЛИ В НАЛИЧИИ</h3>
+          </div>
+          <div class="items-header col-lg-8 col-lg-offset-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5">Название</div> <!-- Name -->
+              <div class="col-lg-1 col-md-1">Год</div> <!-- Year -->
+              <div class="col-lg-1 col-md-1">Цвет</div> <!-- Color -->
+              <div class="col-lg-2 col-md-2">Статус</div> <!-- Status -->
+              <div class="col-lg-2 col-md-2">Цена</div> <!-- Price -->
+            </div>
+          </div>
+        </div>
+        <!-- ITEMS HEADING -->
+
+        <!-- SINGLE ITEM -->
+        <div class="row">
+          <div class="single-item col-lg-8 col-lg-offset-2 col-xs-12">
+            <div class="row">
+              <div class="col-xs-6 col-lg-5 col-md-5 col-sm-6">
+                <span>1.6 MT Ambiente 85 л.с. МКПП</span>
+              </div> <!-- Name -->
+              <div class="col-xs-2 col-lg-1 col-lg-push-1 col-md-1 col-md-push-1 col-sm-3">
+                <div class="circle circle-black"></div>
+              </div> <!-- Circle -->
+              <div class="col-xs-4 col-lg-2 col-lg-push-3 col-md-2 col-md-push-3 col-sm-3 single-item-price">
+                <span>1 689 000 р.</span>
+              </div> <!-- Price -->
+              <!-- HACK reordering visible-xs & visible-sm -->
+              <div class="col-xs-11 col-sm-11 visible-xs visible-sm single-item-options">
+                <span>+ доп. опция "Радио-навигационная система Amundasen 2DIN, CD, MP3"</span>
+              </div>
+              <!-- HACK -->
+              <div class="col-xs-2 col-lg-1 col-lg-pull-3 col-md-1 col-md-pull-3 col-sm-2">2012</div> <!-- Year -->
+              <div class="col-xs-4 col-lg-2 col-lg-pull-2 col-md-2 col-md-pull-2 col-sm-4">Ожидается</div> <!-- Status -->
+              <div class="col-xs-6 col-lg-1 col-md-1 col-sm-6">
+                <button class="pull-right single-item-button">Запрос</button>
+              </div> <!-- Button -->
+              <!-- HACK reordering, visible-lg & visible-md -->
+              <div class="clearfix visible-lg visible-md"></div>
+              <div class="col-lg-6 visible-lg visible-md single-item-options">
+                <span>+ доп. опция "Радио-навигационная система Amundasen 2DIN, CD, MP3"</span>
+              </div>
+              <!-- HACK -->
+            </div>
+          </div>
+        </div>
+        <!-- SINGLE ITEM -->
+
+        <!-- SINGLE ITEM -->
+        <div class="row">
+          <div class="single-item col-lg-8 col-lg-offset-2 col-xs-12">
+            <div class="row">
+              <div class="col-xs-6 col-lg-5 col-md-5 col-sm-6">
+                <span>1.6 MT Ambiente Plus 105 л.с. МКПП</span>
+              </div> <!-- Name -->
+              <div class="col-xs-2 col-lg-1 col-lg-push-1 col-md-1 col-md-push-1 col-sm-3">
+                <div class="circle circle-white"></div>
+              </div> <!-- Circle -->
+              <div class="col-xs-4 col-lg-2 col-lg-push-3 col-md-2 col-md-push-3 col-sm-3 single-item-price">
+                <span>1 189 000 р.</span>
+              </div> <!-- Price -->
+              <div class="clearfix visible-sm visible-xs"></div>
+              <div class="col-xs-2 col-lg-1 col-lg-pull-3 col-md-1 col-md-pull-3 col-sm-2">2012</div> <!-- Year -->
+              <div class="col-xs-4 col-lg-2 col-lg-pull-2 col-md-2 col-md-pull-2 col-sm-4">Ожидается</div> <!-- Status -->
+              <div class="col-xs-6 col-lg-1 col-md-1 col-sm-6">
+                <button class="pull-right single-item-button">Запрос</button>
+              </div> <!-- Button -->
+            </div>
+          </div>
+        </div>
+        <!-- SINGLE ITEM -->
+
+        <!-- SINGLE ITEM -->
+        <div class="row">
+          <div class="single-item col-lg-8 col-lg-offset-2 col-xs-12">
+            <div class="row">
+              <div class="col-xs-6 col-lg-5 col-md-5 col-sm-6">
+                <span>1.6 MT Trend 105 л.с. МКПП</span>
+              </div> <!-- Name -->
+              <div class="col-xs-2 col-lg-1 col-lg-push-1 col-md-1 col-md-push-1 col-sm-3">
+                <div class="circle circle-black"></div>
+              </div> <!-- Circle -->
+              <div class="col-xs-4 col-lg-2 col-lg-push-3 col-md-2 col-md-push-3 col-sm-3 single-item-price">
+                <span>1 459 000 р.</span>
+              </div> <!-- Price -->
+              <div class="clearfix visible-sm visible-xs"></div>
+              <div class="col-xs-2 col-lg-1 col-lg-pull-3 col-md-1 col-md-pull-3">2012</div> <!-- Year -->
+              <div class="col-xs-4 col-lg-2 col-lg-pull-2 col-md-2 col-md-pull-2">В наличии</div> <!-- Status -->
+              <div class="col-xs-6 col-lg-1 col-md-1">
+                <button class="pull-right single-item-button">Запрос</button>
+              </div> <!-- Button -->
+            </div>
+          </div>
+        </div>
+        <!-- SINGLE ITEM -->
+
+        <!-- SINGLE ITEM -->
+        <div class="row">
+          <div class="single-item col-lg-8 col-lg-offset-2 col-xs-12">
+            <div class="row">
+              <div class="col-xs-6 col-lg-5 col-md-5 col-sm-6">
+                <span>1.6 PowerShift Trend Sport 105 л.с. АКПП</span>
+              </div> <!-- Name -->
+              <div class="col-xs-2 col-lg-1 col-lg-push-1 col-md-1 col-md-push-1 col-sm-3">
+                <div class="circle circle-gray"></div>
+              </div> <!-- Circle -->
+              <div class="col-xs-4 col-lg-2 col-lg-push-3 col-md-2 col-md-push-3 col-sm-3 single-item-price">
+                <span>1 459 000 р.</span>
+              </div> <!-- Price -->
+              <div class="clearfix visible-sm visible-xs"></div>
+              <div class="col-xs-2 col-lg-1 col-lg-pull-3 col-md-1 col-md-pull-3">2012</div> <!-- Year -->
+              <div class="col-xs-4 col-lg-2 col-lg-pull-2 col-md-2 col-md-pull-2">Ожидается</div> <!-- Status -->
+              <div class="col-xs-6 col-lg-1 col-md-1">
+                <button class="pull-right single-item-button">Запрос</button>
+              </div> <!-- Button -->
+            </div>
+          </div>
+        </div>
+        <!-- SINGLE ITEM -->
+
+        <!-- SINGLE ITEM -->
+        <div class="row">
+          <div class="single-item col-lg-8 col-lg-offset-2 col-xs-12">
+            <div class="row">
+              <div class="col-xs-6 col-lg-5 col-md-5 col-sm-6">
+                <span>2.0 MT Trend Sport 150 л.с. МКПП</span>
+              </div> <!-- Name -->
+              <div class="col-xs-2 col-lg-1 col-lg-push-1 col-md-1 col-md-push-1 col-sm-3">
+                <div class="circle circle-red"></div>
+              </div> <!-- Circle -->
+              <div class="col-xs-4 col-lg-2 col-lg-push-3 col-md-2 col-md-push-3 col-sm-3 single-item-price">
+                <span>786 000 р.</span>
+              </div> <!-- Price -->
+              <div class="clearfix visible-sm visible-xs"></div>
+              <div class="col-xs-2 col-lg-1 col-lg-pull-3 col-md-1 col-md-pull-3">2012</div> <!-- Year -->
+              <div class="col-xs-4 col-lg-2 col-lg-pull-2 col-md-2 col-md-pull-2">Ожидается</div> <!-- Status -->
+              <div class="col-xs-6 col-lg-1 col-md-1">
+                <button class="pull-right single-item-button">Запрос</button>
+              </div> <!-- Button -->
+            </div>
+          </div>
+        </div>
+        <!-- SINGLE ITEM -->
+
+        <!-- SINGLE ITEM -->
+        <div class="row">
+          <div class="single-item col-lg-8 col-lg-offset-2 col-xs-12">
+            <div class="row">
+              <div class="col-xs-6 col-lg-5 col-md-5 col-sm-6">
+                <span>2.0 PowerShift Trend Sport 150 л.с. АКПП</span>
+              </div> <!-- Name -->
+              <div class="col-xs-2 col-lg-1 col-lg-push-1 col-md-1 col-md-push-1 col-sm-3">
+                <div class="circle circle-green"></div>
+              </div> <!-- Circle -->
+              <div class="col-xs-4 col-lg-2 col-lg-push-3 col-md-2 col-md-push-3 col-sm-3 single-item-price">
+                <span>821 000 р.</span>
+              </div> <!-- Price -->
+              <!-- HACK reordering visible-xs & visible-sm -->
+              <div class="col-xs-11 visible-xs visible-sm single-item-options">
+                <span>+ доп. опция "Радио-навигационная система Amundasen 2DIN, CD, MP3"</span>
+              </div>
+              <!-- HACK -->
+              <div class="col-xs-2 col-lg-1 col-lg-pull-3 col-md-1 col-md-pull-3">2013</div> <!-- Year -->
+              <div class="col-xs-4 col-lg-2 col-lg-pull-2 col-md-2 col-md-pull-2">Нет в наличии</div> <!-- Status -->
+              <div class="col-xs-6 col-lg-1 col-md-1">
+                <button class="pull-right single-item-button">Запрос</button>
+              </div> <!-- Button -->
+              <!-- HACK reordering, visible-lg & visible-md -->
+              <div class="clearfix visible-lg visible-md"></div>
+              <div class="col-lg-6 visible-lg visible-md single-item-options">
+                <span>+ доп. опция "Радио-навигационная система Amundasen 2DIN, CD, MP3"</span>
+              </div>
+              <!-- HACK -->
+            </div>
+          </div>
+        </div>
+        <!-- SINGLE ITEM -->
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">&copy; 2015 CAPTAIN QUACK<br>
+        Кобыла и трупоглазые жабы!</p>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- jQuery core -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

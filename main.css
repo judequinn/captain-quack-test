@@ -1,0 +1,470 @@
+html, body {
+	font-family: Roboto, sans-serif;
+	font-size: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+
+/* Epic nav */
+
+#quack-logo {
+	-webkit-filter: drop-shadow(3px 3px 3px #000);
+	filter: drop-shadow(3px 3px 3px #000);
+	padding: 5px 0 5px 5px;
+}
+
+#menu-button {
+	border: none;
+	margin-top: 23px;
+	padding: 0;
+}
+
+.navbar {
+	background-color: #282D30;
+	border-radius: 0;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.navbar-collapse {
+	border: none;
+	box-shadow: none;
+}
+
+.navbar-dropdown-list {
+	background-color: #282D30;
+	box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: #fff;
+}
+
+
+/* Brand select */
+
+.brand-select-select {
+	margin-left: 15px;
+	margin-top: -15px;
+	min-width: 200px;
+}
+
+.brand-select {
+	padding: 0 15px 15px;
+}
+
+.brand-select-button {
+	min-width: 200px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.caret {
+	margin-top: 7px;
+}
+
+.brand-select-select li a {
+	color: gray;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.brand-select-select li a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.dropdown-toggle {
+	border-radius: 0;
+}
+
+
+/* Carousel */
+
+.carousel {
+	max-width: 1140px;
+	margin: 30px auto 60px;
+}
+
+.carousel-control {
+	width: 6%;
+}
+
+.carousel-inner-circle {
+	background-color: #fff;
+	border-radius: 50%;
+	color: #00AEEB;
+	font-size: 2.7em;
+	font-weight: 100;
+	line-height: 0.9em;
+	opacity: 0;
+	height: 40px;
+	cursor: pointer;
+	position: absolute;
+	text-indent: 8px;
+	transition: opacity 0.5s ease-in-out;
+	width: 40px;
+}
+
+.carousel-inner-description {
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 300;
+	opacity: 0;
+	position: absolute;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-inner-description > a {
+	color: #00AEEB;
+	font-size: 0.8em;
+}
+
+.opacity-visible {
+	opacity: 1;
+}
+
+.carousel-inner-circle:hover {
+	color: #FC422F;
+	opacity: 1;
+}
+
+.carousel-inner-image {
+	transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-inner-item {
+	background-color: #000;
+	position: relative;
+}
+
+.carousel-inner-item:hover > .carousel-inner-image {
+	opacity: 0.3;
+}
+
+.carousel-inner-item:hover .carousel-inner-circle {
+	opacity: 1;
+}
+
+.carousel-caption {
+	height: 45px;
+	left: 50%;
+	margin-bottom: 20px;
+	padding: 0;
+	right: 5%;
+}
+
+.carousel-caption p {
+	font-size: 2.5em;
+	font-weight: 400;
+	height: 45px;
+	text-align: right;
+}
+
+
+/* Heading for items section */
+
+.items-heading {
+	border-left: 4px solid gray;
+	font-weight: bold;
+	padding-left: 15px;
+	margin-bottom: 30px;
+}
+
+.items-heading h3 {
+	margin: 0;
+}
+
+.items-header {
+	background-color: #D5DBDE;
+	border-top-left-radius: 5px ;
+	border-top-right-radius: 5px;
+	font-weight: bold;
+	padding: 15px;
+}
+
+
+/* Single item */
+
+.single-item {
+	background-color: #F6F6F6;
+	border-top: 1px solid #E4E4E4;
+	font-size: 0.87em;
+	font-weight: 300;
+	line-height: 1.3em;
+	padding: 15px 20px;
+}
+
+.single-item-options {
+	font-size: 0.87em;
+	font-weight: 100;
+	margin: 0;
+}
+
+.clearfix {
+	margin: 20px 0;
+}
+
+
+/* Circles */
+
+.circle {
+	border-radius: 50%;
+	float: left;
+	height: 20px;
+	width: 20px;
+}
+
+.circle-black {
+	background-color: #282D30;
+}
+
+.circle-gray {
+	background-color: #E4E4E4;
+}
+
+.circle-green {
+	background-color: #88C505;
+}
+
+.circle-red {
+	background-color: #D84345;
+}
+
+.circle-white {
+	background-color: #fff;
+	border: 1px solid #E4E4E4;
+}
+
+
+/* Footer */
+
+.footer {
+	background-color: #282D30;
+	color: #E4E4E4;
+	font-size: 0.8em;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.footer-text {
+	padding: 40px 0 30px;
+}
+
+
+/*------------*/
+/* Responsive */
+/*------------*/
+
+
+/* Medium to large */
+@media (min-width: 768px) {
+
+	.navbar-collapse {
+		float: right;
+	}
+
+	.quack-logo-link {
+		margin-left: 10px;
+	}
+
+	.navbar {
+		min-height: 100px;
+	}
+
+	.navbar-dropdown-list li a {
+		padding: 20px 15px;
+		margin: 0;
+	}
+
+	.navbar-dropdown-list li a:hover {
+		background-color: #00ADEB;
+	}
+
+	.navbar-menu-link a {
+		padding: 0 !important;
+		margin: 20px;
+	}
+
+	.navbar-nav > li > a {
+		padding: 0;
+	}
+	
+	.navbar-menu-item {
+		margin: 35px 20px 5px;
+		font-size: 1.1em;
+		font-weight: 500;
+	}
+
+	.navbar-menu-item:hover,
+	.navbar-menu-item:active {
+		background-color: #282D30;
+		border-bottom: 3px solid #00ADEB;
+	}
+
+	.navbar-dropdown-toggle:focus,
+	.navbar-dropdown-toggle:hover,
+	.navbar-dropdown-toggle:active {
+		background-color: #282D30 !important;
+		border-bottom: 3px solid #00ADEB;
+	}
+
+	.navbar-dropdown-toggle:visited {
+		background-color: #282D30 !important;
+	}
+
+	.chevron-down {
+		margin-left: 5px;
+		font-size: 0.7em;
+	}
+
+}
+
+
+/* Small to medium */
+@media (max-width: 992px) {
+
+	#quack-logo {
+		max-width: 350px;
+	}
+
+	.navbar-menu-item {
+		margin: 30px 15px 5px;
+		font-size: 1.1em;
+		font-weight: 400;
+	}
+
+	.single-item-price {
+		text-align: right;
+	}
+
+	.single-item-options {
+		font-size: 0.9em;
+		font-weight: 100;
+		margin: 15px 0;
+	}
+
+	.circle {
+		float: right;
+	}
+
+	.single-item-button {
+		background-color: #282D30;
+		border: none;
+		border-radius: 25px;
+		color: #fff;
+		font-weight: 400;
+		padding: 7px 15px;
+	}
+
+	.single-item-button:hover {
+		background-color: #383D40;
+		border: none;
+		border-radius: 25px;
+		color: #fff;
+		font-weight: 400;
+		padding: 7px 15px;
+	}
+
+	.navbar {
+		min-height: 80px;
+	}
+
+}
+
+
+/* Medium to large */
+@media (min-width: 992px) {
+
+	.navbar-menu-item {
+		margin: 40px 15px 5px;
+		font-size: 1.1em;
+		font-weight: 400;
+	}
+
+	.items-heading {
+		margin-left: 15px;
+	}
+
+	.single-item-button {
+		background-color: #F6F6F6;
+		border: none;
+		border-radius: 0;
+		color: gray;
+		padding: 0;
+	}
+
+	.single-item-button:hover {
+		border-bottom: 1px dashed #00ADEB;
+		color: #00ADEB;
+	}
+	.clearfix {
+		margin: 0;
+	}
+
+}
+
+
+/* Mobile devices */
+@media (max-width: 768px) {
+
+	#quack-logo {
+		max-width: 300px;
+	}
+
+	.quack-logo-link {
+		margin-left: 5px;
+	}
+
+	.navbar-dropdown-list {
+		text-transform: uppercase;
+	}
+	.navbar-menu-item {
+		margin: 0;
+	}
+	.navbar-menu-item:hover,
+	.navbar-menu-item:active {
+		background-color: #00ADEB;
+	}
+
+	.navbar-dropdown-toggle:hover,
+	.navbar-dropdown-toggle:active {
+		background-color: #00ADEB !important;
+	}
+
+	/* HACK */
+	.navbar-inverse .navbar-nav > .open > a,
+	.navbar-inverse .navbar-nav > .open > a:focus,
+	.navbar-inverse .navbar-nav > .open > a:hover {
+		background-color: #282D30;
+	}
+
+	.navbar-dropdown-list-item {
+		color: #fff;
+		background-color: #383D40;
+		border-top: 1px solid #404548;
+		padding: 5px 0;
+	}
+
+}
+
+
+/* Widescreen */
+@media (min-width: 1200px) {
+
+	#quack-logo {
+		position: absolute;
+		top: 3px;
+	}
+
+	.navbar-wrapper {
+		max-width: 80%;
+		margin: auto;
+	}
+
+	.items-heading {
+		margin-left: 16.666667%;
+	}
+
+}
